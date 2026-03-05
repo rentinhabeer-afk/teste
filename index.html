@@ -13,45 +13,70 @@ body {
     color: #333;
 }
 
+/* MENU */
 header {
-    background: #1f2937;
+    background: #111827;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav a {
     color: white;
-    padding: 60px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #3b82f6;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, #1f2937, #2563eb);
+    color: white;
     text-align: center;
+    padding: 100px 20px;
 }
 
-header h1 {
+.hero h1 {
+    font-size: 48px;
     margin: 0;
-    font-size: 40px;
 }
 
-header p {
-    font-size: 18px;
-    opacity: 0.8;
+.hero p {
+    font-size: 20px;
+    margin-top: 15px;
 }
 
+/* SEÇÕES */
 section {
-    padding: 50px 20px;
-    max-width: 900px;
+    padding: 60px 20px;
+    max-width: 1000px;
     margin: auto;
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 30px;
-    color: #1f2937;
+    margin-bottom: 40px;
 }
 
 .card {
     background: white;
-    padding: 25px;
+    padding: 30px;
     margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
+/* FOOTER */
 footer {
-    background: #1f2937;
+    background: #111827;
     color: white;
     text-align: center;
     padding: 20px;
@@ -62,40 +87,36 @@ footer {
 <body>
 
 <header>
-    <h1>William</h1>
-    <p>Gerente | Liderança | Gestão de Equipes</p>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre</a>
+    </nav>
 </header>
-<nav>
-  <a href="index.html">Início</a> |
-  <a href="sobre.html">Sobre</a>
-</nav>
-<section>
-    <h2>Sobre Mim</h2>
-    <div class="card">
-        <p>Sou gerente com experiência em liderança de equipes, gestão de processos e foco em resultados. Busco crescimento profissional contínuo e inovação na gestão.</p>
-    </div>
+
+<section class="hero">
+    <h1>William</h1>
+    <p>Gerente | Liderança Estratégica | Gestão de Resultados</p>
 </section>
 
 <section>
-    <h2>Competências</h2>
-    <div class="card">
-        ✔ Liderança de equipe<br>
-        ✔ Planejamento estratégico<br>
-        ✔ Gestão de projetos<br>
-        ✔ Desenvolvimento de pessoas
-    </div>
-</section>
+    <h2>Resumo Profissional</h2>
 
-<section>
-    <h2>Contato</h2>
     <div class="card">
-        📧 email@exemplo.com<br>
-        🔗 LinkedIn: linkedin.com/in/seuperfil
+        <p>Sou profissional com experiência em liderança de equipes, planejamento estratégico e gestão de processos. 
+        Atuo com foco em resultados, melhoria contínua e desenvolvimento de pessoas.</p>
+    </div>
+
+    <div class="card">
+        <h3>Diferenciais</h3>
+        ✔ Gestão de equipes de alta performance<br>
+        ✔ Tomada de decisão estratégica<br>
+        ✔ Foco em metas e indicadores<br>
+        ✔ Desenvolvimento organizacional
     </div>
 </section>
 
 <footer>
-    © 2026 Renato - Todos os direitos reservados
+    © 2026 William - Todos os direitos reservados
 </footer>
 
 </body>
