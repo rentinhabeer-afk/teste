@@ -6,8 +6,13 @@
 <title>William | Perfil Profissional</title>
 
 <style>
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
     background: #f4f6f9;
     color: #333;
@@ -16,13 +21,14 @@ body {
 /* MENU */
 header {
     background: #111827;
-    padding: 20px 0;
+    padding: 15px 0;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 nav a {
@@ -41,34 +47,34 @@ nav a:hover {
     background: linear-gradient(135deg, #1f2937, #2563eb);
     color: white;
     text-align: center;
-    padding: 100px 20px;
+    padding: 80px 20px;
 }
 
 .hero h1 {
-    font-size: 48px;
-    margin: 0;
+    font-size: 42px;
 }
 
 .hero p {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 15px;
 }
 
 /* SEÇÕES */
 section {
-    padding: 60px 20px;
+    padding: 50px 20px;
     max-width: 1000px;
     margin: auto;
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    font-size: 28px;
 }
 
 .card {
     background: white;
-    padding: 30px;
+    padding: 25px;
     margin-bottom: 20px;
     border-radius: 12px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
@@ -80,6 +86,34 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+}
+
+/* 🔥 RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .card {
+        padding: 20px;
+    }
 }
 </style>
 </head>
